@@ -1,15 +1,7 @@
-DAIKANYAMA FILM — GitHub Pages 公開ファイル
+DAIKANYAMA FILM — GitHub Pages 公開用ファイル
 
-このフォルダの中身をGitHubリポジトリの公開ルートにアップロードしてください。
-index.html / 404.html / assets / img が公開用ファイルです。
+このフォルダの中身（index.html、404.html、assets、img、.nojekyll）をGitHubリポジトリの公開ルートにアップロードしてください。HTML・CSS・JavaScriptはassets/に、画像はimg/にあります。
 
-重要:
-このビルドは独自ドメインなど、URLのルート (https://example.com/) に公開する設定です。
-GitHub Pagesの標準URL https://ユーザー名.github.io/リポジトリ名/ にそのまま置く場合、
-assets・画像・ページ内リンクがリポジトリ名以下を向くよう再ビルドが必要です。
-既存ドメインを使う場合は、GitHubリポジトリ Settings > Pages > Custom domain にドメインを設定し、
-ドメイン管理会社側でGitHub PagesのDNS設定を行ってください。
+このビルドはドメイン直下とGitHub Pagesの /リポジトリ名/ の両方を想定して相対パス化しています。GitHub Pagesで公開するときは、Settings > Pages から公開元を設定してください。
 
-直接アクセス時の /works /cast /news /lp は404.htmlからSPAを起動します。
-問い合わせフォームの送信先は未設定です。送信を有効化するには、ソースをビルドする際に
-VITE_FORMSPREE_IDを設定してください（手順は同梱ZIPのプロジェクトREADMEを参照）。
+お問い合わせフォームは送信先未設定です。
